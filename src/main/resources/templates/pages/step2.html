@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Speaking the Incantation of the Dire Possum</title>
+</head>
+<body>
+<div th:insert="fragments/header-footer :: header"></div>
+<div id="main">
+In the heart of the forest, position yourself directly below the North Star. Lay down an offering of trash from the nearest
+dumpster, light it on fire, and speak the following phrases:
+
+<p>"O MAGNA SED PARVAE MURE SILVARUM ALTA"</p>
+<p>"SUSCIPE OBLATIONES MEAS QUISQUILIARUM"</p>
+<p>"ET BENEDIC NOS TUA PRAESENTIA VISNE ULLAS"</p>
+
+<img class="image" alt="Picture of a campfire" th:src="@{/img/Campfire_Pinecone.png}"/>
+    <p class="credit">Image from <a href="https://en.wikipedia.org/wiki/Campfire">wikipedia.org</a>.</p>
+</div>
+<br/>
+<br/>
+<div th:replace="fragments/header-footer :: footer"></div>
+</body>
+</html>

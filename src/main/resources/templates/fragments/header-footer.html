@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dire Possum Summoning by Dunbar Pizzeria and Taxidermy</title>
+</head>
+<body>
+<header th:fragment="header">
+    <h1 id="main_header">Dire Possum Summoning by Dunbar Pizzeria and Taxidermy</h1>
+    <br/>
+    <link th:href="@{/style.css}" rel="stylesheet">
+    <a th:href="@{/}"><img class="logo" alt="https://www.pizzerialocale.com/broadway-location/" th:src="@{/img/pizzeria.jpg}"/></a>
+    <nav>
+        <ol>
+            <li><a th:href="@{/step1}">Finding a Summoning Location</a></li>
+            <li><a th:href="@{/step2}">Speaking the Incantation of the Possums</a></li>
+            <li><a th:href="@{/step3}">Besting the Dire Possum in Combat</a></li>
+        </ol>
+    </nav>
+</header>
+
+<footer th:fragment="footer">
+    <div id="footer">Dunbar Pizzeria and Taxidermy LLC ©2020-2021</div>
+</footer>
+</body>
+</html>

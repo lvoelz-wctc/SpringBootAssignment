@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:insert="fragments/header-footer :: header"></div>
+    <div id="main">
+    <h2>
+        Mission Statement
+    </h2>
+    <p>
+        Here at Dunbar Pizzeria and Taxidermy, we know you love two things: Delicious pizza, and the ethereal sylvan
+        climes of the Wisconsin Northwoods. But we've seen an unsettling trend over the last five years wherein
+        attacks by fell beasts of the forest upon unsuspecting travelers have risen by 5000%. To this end, we
+        are proud to announce a Dire Beasts as a Service (DBaaS) subscription where our customers can summon a personal
+        Dire Beast for protection during their northwood ventures.
+    </p>
+
+    <p>
+        Due to unexpected demand, we are no longer able to provide Dire Wolves, Dire Bears, or Dire Owlbears. DBaaS
+        subscribers may currently summon only Dire Possums. In the following pages, we've provided a convenient
+        walkthrough that our clients may follow to summon their personalized Dire Possum at their leisure.
+    </p>
+        <img class="image" alt="Picture of a possum" th:src="@{/img/possum.jpg}"/>
+        <p class="credit">Image from <a href="https://www.mentalfloss.com/article/575436/possum-vs-opossum-what-is-difference">mentalfloss.com</a></p>
+    <h2>A Message From Our Chief Operating Officer</h2>
+    <p><i>We are currently open to buyouts. Interested investors can contact Dunbar Pizzeria & Taxidermy
+        COO Einrik Bjronson at ebjornson@dpt.com.</i></p>
+    </div>
+    <br/>
+    <br/>
+    <div th:replace="fragments/header-footer :: footer"></div>
+</body>
+</html>

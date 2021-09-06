@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Finding a Summoning Location</title>
+</head>
+<body>
+<div th:insert="fragments/header-footer :: header"></div>
+<div id="main">
+<p>On the eve following a thunderstorm, under the light of a crescent moon, travel 7 score and 7 times 7 paces
+beyond the northern Wisconsin Dunbar Pizzeria and Taxidermy office. Stray not off the path of stone, lest
+the benighted eyes of fell forest creatures cease their unyielding gaze to drag you into the unmarked wilds. Continue
+until you have reached the heart of the forest. It bears no marking fit for the eyes of humanity, but your soul
+shall sense the primal undulations of the unrestrained forest.</p>
+
+<p>UPDATE 12/05/20: After feedback from the public, we have added a small fire pit, an outhouse, and a sign labeled
+"HEART OF THE FOREST."</p>
+<img class="image" alt="Picture of a forest at night" th:src="@{/img/forest.jpg}"/>
+    <p class="credit">Image from <a href="https://wallpapercave.com/dark-forest-wallpapers">wallpapercave.com</a>.</p>
+</div>
+<br/>
+<br/>
+<div th:replace="fragments/header-footer :: footer"></div>
+</body>
+</html>

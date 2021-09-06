@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Besting the Dire Possum in Combat</title>
+</head>
+<body>
+<div th:insert="fragments/header-footer :: header"></div>
+<div id="main">
+<p>In the final step of the summoning process, the aspirant must best the Dire Possum in sword combat
+before it will submit to service as a summoned entity. While most aspirants will have widely
+varying preferred combat styles for fighting summoned entities, we've provided a list of recommendations
+    that can be applied to most fighting methods.</p>
+<ul>
+    <li>Protect your eyes. Dire Possums are known to blind their opponents at the first chance.</li>
+    <li>Attempt a flurry of rapid strikes that can be easily redirected if needed. Dire Possums
+    have exceptionally high agility and can easily dodge slow, telegraphed swings.</li>
+    <li>Do not attempt stealth. A Dire Possum can detect the scent of humans from miles away, and
+    will likely counter your attempts with a sneak attack of its own.</li>
+</ul>
+    <img class="image" alt="Picture of a sword" th:src="@{/img/sword.jpg}"/>
+    <p class="credit">Image from <a href="https://swordskingdom.com/luciendar-sword-of-light">swordskingdom.com</a></p>
+</div>
+<br/>
+<br/>
+<div th:replace="fragments/header-footer :: footer"></div>
+</body>
+</html>
